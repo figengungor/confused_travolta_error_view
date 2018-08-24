@@ -1,0 +1,20 @@
+name: confused_travolta_error_view
+description: A fun way to display error view.
+version: 1.0.0
+author: Figen Güngör <figengungor1@gmail.com>
+homepage: https://github.com/figengungor/confused_travolta_error_view
+
+environment:
+  sdk: '>=1.20.1 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/gifs/john.gif
