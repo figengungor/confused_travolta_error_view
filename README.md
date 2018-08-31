@@ -9,9 +9,8 @@ Display your error view composed of following components:
 * An error message. (Can be customized with `errorWidget`, `errorMessage`
 and `errorMessageStyle`)
 
-* A Retry button. (Can be customized with `retryButton`,
-`retryButtonText` and `onTapRetryButton`)
-
+* A Retry button. [Optional] (Can be customized with `retryButton`,
+`retryButtonText` and `onTapRetryButton`).
 ## Example
 
 ![](assets/gifs/confused_travolta.gif)
@@ -43,6 +42,13 @@ Using custom error and button widgets:
  )
 ```
 
+Using without a button
+
+```dart
+ConfusedTravoltaErrorView(
+    errorMessage: 'You have no favorites, yet.',
+)
+```
 
 ## Credits
 

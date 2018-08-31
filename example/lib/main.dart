@@ -23,13 +23,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: Text('ConfusedTravoltaErrorView Demo'),
           bottom: TabBar(tabs: [
             Tab(text: 'Default'),
             Tab(text: 'Custom'),
+            Tab(text: 'No Button'),
           ]),
         ),
         body: TabBarView(children: [
@@ -38,6 +39,7 @@ class HomePage extends StatelessWidget {
             onTapRetryButton: () {},
           ),
           ConfusedTravoltaErrorView(
+            backgroundColor: Colors.grey,
             errorText: Text(
               'Ooops! Something went wrong.',
               style: TextStyle(fontSize: 19.0),
@@ -48,7 +50,10 @@ class HomePage extends StatelessWidget {
               color: Colors.black38,
               textColor: Colors.white,
             ),
-          )
+          ),
+          ConfusedTravoltaErrorView(
+            errorMessage: 'You have no favorites, yet.',
+          ),
         ]),
       ),
     );
